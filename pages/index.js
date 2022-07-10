@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+           <Link href="/posts/first-post"><a>베네프</a></Link>에 오신 여러분들을 환영합니다!
         </h1>
 
         <p className={styles.description}>
@@ -23,30 +24,30 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>소개 &rarr;</h2>
+            <p>베네프란 어떤 곳인지 지금 바로 클릭!</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>갤러리 &rarr;</h2>
+            <p>어떤 프로젝트들이 있었는지 알아볼까요?</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
           >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h2>공지사항 &rarr;</h2>
+            <p>핫한 베네퍼의 소식을 확인해보세요!</p>
           </a>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>프로젝트 신청하기 &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              누구나 함께 하고싶은 마음과 열정이 있다면 지금 개설하세요!
             </p>
           </a>
         </div>
@@ -61,6 +62,9 @@ export default function Home() {
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
+          <span className={styles.logo}>
+            &copy;BENEF
           </span>
         </a>
       </footer>
