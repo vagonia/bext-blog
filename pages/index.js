@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-           <Link href="/posts/first-post"><a>베네프</a></Link>에 오신 여러분들을 환영합니다!
+           <Link href="/posts/first-post"><a>베네프</a></Link>에 오신 여러분들을 진심으로 환영합니다!
         </h1>
 
         <p className={styles.description}>
